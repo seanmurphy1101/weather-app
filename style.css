@@ -1,0 +1,64 @@
+#searchbar{
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    width: 400px;
+}
+#error{
+    height: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+input{
+    height: 20px;
+    width: 200px;
+    text-align: center;
+}
+#search{
+    height: 26px;
+}
+#container{
+    display: grid;
+    grid-template-columns: 800px;
+    width: 800px;
+    margin: auto;
+    justify-content: center;
+}
+div{
+    margin: 5px auto 5px auto;
+}
+#place{
+    font-size: 70px;
+    margin-top: 50px;
+    margin-bottom: 2px;
+    font-family: monospace bold;
+}
+#description{
+    margin-top: 2px;
+    justify-content: left;
+    font-size: 25px;
+}
+#temp{
+    font-size: 80px;
+    margin-top: 10px;
+    font-family: monospace bold;
+}
+#tempButton{
+    width: 50px;
+    height: 20px;
+    margin: auto;
+}
+.minorStats{
+    font-size: 20px;
+}
+body{
+    color: white;
+    font-family: monospace;
+    background-image: url(space4.jpg);
+    background-size: cover; /* or contain depending on what you want */
+    background-repeat: no-repeat;
+}
+button{
+    background-color: white;
+}
