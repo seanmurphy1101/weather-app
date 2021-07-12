@@ -1,4 +1,4 @@
-import key from apiKey;
+import {key} from '/apiKey.js';
 let container = document.getElementById("container");
 let city = document.getElementById("city");
 let search = document.getElementById("search");
@@ -11,7 +11,7 @@ let curRealFeel;
 search.addEventListener('click', accessAPI);
 async function accessAPI(){
     let input = city.value;
-    let result = fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input}&units=imperial&appid=${key}`, {mode: 'cors'})
+    let result = fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input}&units=imperial&appid=${key()}`, {mode: 'cors'})
     result.then(response => response.json()).then(data => {
         console.log(data);
         if (data.cod==="404"){
